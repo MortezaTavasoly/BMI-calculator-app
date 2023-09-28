@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>BMI Calculator</h1>
+      </header>
+      <div class="explanation">
+        <img
+          class="what-img"
+          src="../src/images/WhatIsBMI_FeatureImage_21Feb2023-01.png"
+          alt="image"
+        />
+        <h2>What is BMI?</h2>
+        <p>
+          Body Mass Index (BMI) is a person’s weight in kilograms (or pounds)
+          divided by the square of height in meters (or feet). A high BMI can
+          indicate high body fatness. BMI screens for weight categories that may
+          lead to health problems, but it does not diagnose the body fatness or
+          health of an individual.
+        </p>
+        <img class="how-img" src="../src/images/BMI.png" alt="image" />
+        <h2>How to calculate BMI manually?</h2>
+        <ul class="clac-ways">
+          <li>
+            <h3>How to calculate with Pounds and Inches?</h3>
+            <strong> Formula : weight (lb) ÷ [height (in)]² x 703 </strong>
+            <p>
+              When using English measurements, ounces (oz) and fractions must be
+              changed to decimal values. Then, calculate BMI by dividing weight
+              in pounds (lb) by height in inches (in) squared and multiplying by
+              a conversion factor of 703.
+            </p>
+          </li>
+          <li>
+            <h3>How to calculate with kilograms and centimeters or meters?</h3>
+            <strong>
+              Formula : weight (kg) ÷ height (cm) ÷ height (cm) x 10,000
+            </strong>
+            <br />
+            <strong> Formula : weight (kg) ÷ height² (meters) </strong>
+
+            <p>
+              With the metric system, the formula for BMI is weight in kilograms
+              divided by height in meters squared. Since height is commonly
+              measured in centimeters, an alternate calculation formula,
+              dividing the weight in kilograms by the height in centimeters
+              squared, and then multiplying the result by 10,000, can be used.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="calculation">
+        <h2>Calculate Your BMI.</h2>
+        <form>
+          <label>
+            Weight(Kg):
+            <input
+              type="text"
+              class="weight"
+              oninput="this.value = this.value.replace(/[^0-9]/g , '')"
+            />
+          </label>
+          <label>
+            Height(Cm):
+            <input
+              type="text"
+              class="height"
+              oninput="this.value = this.value.replace(/[^0-9]/g , '')"
+            />
+          </label>
+          <button class="calc-but">Calculate</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
