@@ -1,1 +1,1 @@
-This is a BMI calculator app with TypeScript.
+This is a responsive BMI calculator app with basic TypeScript.
